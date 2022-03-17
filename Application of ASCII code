@@ -1,0 +1,28 @@
+
+#include <stdio.h>
+//uppercase_lowercase_digit_or_special_character
+int main()
+{
+    char a;
+    printf("enter any key\n");
+    scanf("%c",&a);
+    if(a>=65&&a<=90){
+        printf("it's an uppercase");
+    }
+    else{
+        if(a>=97&&a<=122){
+            printf("it's lowercase");
+        }
+        else{
+            if(a>=48&&a<=57){
+                printf("it's a degit");
+            }
+            else{
+                printf("it's a special character");
+               
+            }
+        }
+        
+    }
+    return 0;
+}
