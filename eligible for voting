@@ -1,0 +1,22 @@
+
+#include <stdio.h>
+//cheaking_eligibility_for_voting_in_india
+int main()
+{
+    int age;
+    printf("enter your age\n");
+    scanf("%d",&age);
+    if(age>=18&&age<=120){ 
+        //assuming that highest age anyone can live is 120 years
+        printf("congratulations!! You are eligible for voting");
+    }
+    else{
+        if(age>120||age<0){
+            printf("please! enter a valid number");
+        }
+        else{
+            printf("I know you are exicited to be a voter, kindly wait for %d years",18-age);
+        }
+    }
+    return 0;
+}
